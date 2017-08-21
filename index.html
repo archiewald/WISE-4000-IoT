@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">WISE-4000 basic</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">I/O overview<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Datalogger</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" style="padding-top: 20px">
+
+      <div class="card">
+        <h4 class="card-header">Wejścia cyfrowe</h4>
+        <div class="card-body">
+          <table class="table">
+          <thead class="thead">
+            <tr>
+              <th>Nazwa</th>
+              <th>Wartość</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Digital Input 0</td>
+              <td><button type="button" class="btn btn-light" id="DI0">??</button></td>
+            </tr>
+            <tr>
+              <td>Digital Input 1</td>
+              <td><button type="button" class="btn btn-light" id="DI1">??</button></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4 class="card-header">Wejścia analogowe</h4>
+        <div class="card-body">
+          <table class="table">
+          <thead class="thead">
+            <tr>
+              <th>Nazwa</th>
+              <th>Wartość</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Analog Input 0</td>
+              <td><span id="AI0">??</span> V</td>
+            </tr>
+            <tr>
+              <td>Analog Input 1</td>
+              <td><span id="AI1">??</span> V</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h4 class="card-header">Wyjścia przekaźnikowe</h4>
+        <div class="card-body">
+          <table class="table">
+          <thead class="thead">
+            <tr>
+              <th>Nazwa</th>
+              <th>Wartość</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Digital Output 0</td>
+              <td><button type="button" class="btn btn-light" id="DO0" onclick="toggleDO(0)">??</button></td>
+            </tr>
+            <tr>
+              <td>Digital Output 1</td>
+              <td><button type="button" class="btn btn-light" id="DO1" onclick="toggleDO(1)">??</button></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/WISEhandler.js"></script>
+  </body>
+</html>
