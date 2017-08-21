@@ -3,6 +3,7 @@ var deviceAccount = "root";
 var devicePassword = "00000000";
 
 $(document).ready(function(){
+  putLoginData();
   loadDIvalues();
   loadAIvalues();
   loadDOvalues();
@@ -13,6 +14,10 @@ $(document).ready(function(){
     }, 1000);
 });
 
+function putLoginData(){
+  $("#ip").html(deviceIpAddress);
+  $("#login").html(deviceAccount);
+}
 
 function loadDIvalues()
 {
